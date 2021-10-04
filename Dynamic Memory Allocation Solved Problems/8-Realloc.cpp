@@ -1,3 +1,4 @@
+//Syntax: void *realloc(void *ptr,size_t newSize)
 #include<stdio.h>
 #include<stdlib.h>
 
