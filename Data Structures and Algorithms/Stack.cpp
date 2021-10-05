@@ -15,13 +15,13 @@ int main(){
         printf("1. Push \n");
         printf("2. Pop \n");
         printf("3. Display \n");
-        printf("4. Quit \n");
+        printf("4. Peak \n");
+        printf("5. Quit \n");
         scanf("%d", &ch);
 
         switch(ch)
         {
-            case 1:
-            {
+            case 1:{
                 top = push(stack,top);
                 }break;
             
@@ -39,7 +39,7 @@ int main(){
 
             case 5:{
                 exit(1);
-            }
+            }break;
 
             default:
             printf("Invalid Choice \n");
