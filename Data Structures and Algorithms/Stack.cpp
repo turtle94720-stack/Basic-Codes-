@@ -12,7 +12,7 @@ int main(){
     int ch;
 
     do{
-        printf("1. Push \n");
+        printf("\n1. Push \n");
         printf("2. Pop \n");
         printf("3. Display \n");
         printf("4. Peak \n");
@@ -51,7 +51,7 @@ int push(int stack[],int top)
 {
     int n;
     if(top==max-1)
-        printf("Stack is full \n");
+        printf("Stack is full! \n");
     else{
         printf("Enter the element to be pushed :");
         scanf("%d",&n);
@@ -64,18 +64,18 @@ int push(int stack[],int top)
 int pop(int stack[],int top){
     int n;
     if(top==-1)
-        printf("Stack is empty \n");
+        printf("Stack is empty! \n");
     else{
         n=stack[top];
             top--;
-            printf("%d\n",n);
+            printf("The deleted element is : [%d]\n",n);
     }
     return top;
 }
 
 void disp(int stack[],int top){
     if(top==-1)
-        printf("Stack is empty \n");
+        printf("Stack is empty! \n");
     else{
         printf("Elements in the stack are :");
         while(top>=0){
@@ -87,7 +87,7 @@ void disp(int stack[],int top){
 
 void peak(int stack[],int top){
     if(top==-1)
-        printf("Stack is empty \n");
+        printf("Stack is empty! \n");
     else{
         printf("%d", stack[top]);
     }
