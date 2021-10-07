@@ -3,7 +3,7 @@
 #define max 10
 
 
-int enqueue(int[],int,int);
+int enqueue(int[],int,int);                        //implementing functions here
 int dequeue(int[],int,int);
 void display(int[],int,int);
 void peek(int[],int,int);
@@ -14,7 +14,7 @@ int main(){
     int queue[max];
     
     do{
-        printf("\nPlease enter your choice :");
+        printf("\nPlease enter your choice :");                 
         printf("\n1. Enqueue \n");
         printf("2. Dequeue \n");
         printf("3. Display \n");
@@ -59,15 +59,15 @@ int main(){
 int enqueue(int queue[],int f, int r)
 {
     int x;
-    if(f==-1 && r==-1){
-        f=0;
+    if(f==-1 && r==-1){                         //Checking if elements are added or not
+        f=0;                                    //here both front and rear is 0 so that the queue is starting from 0 till max range 
         r=0;
         printf("Enter the element :");
         scanf("%d",&x);
         queue[r]=x;
     }
     else if((r+1)%max==f){
-        printf("Queue is full");
+        printf("Queue is full");                        //suppose rear is 1 and (1+1)%10 is 2 and front is also 2 then that means queue is full
     }
     else{
         r=(r+1)%max;
@@ -85,7 +85,7 @@ int dequeue(int queue[],int f,int r)
     }
 
     else if(f==r){
-        f=r=-1;
+        f=r=-1;                                 // If both front and rear are pointing to same location then make them both pointing to -1
     }
 
     else{
@@ -96,7 +96,7 @@ int dequeue(int queue[],int f,int r)
 
 void display(int queue[],int f,int r)
 {
-    int i=f+1;
+    int i=f+1;                                          //here is f=f+1 because f is initialized as -1 in global
     if(f==-1 && r==-1)
     {
         printf("Queue is empty!");
