@@ -8,7 +8,7 @@
 
 <p align="center"><h3> Contributing to Hacktoberfest 2021 👨🏼‍💻</h3></p>
 
-<img src="https://drive.google.com/file/d/1OHiAi2Cuwcq4xsj0wm5Im7FoayDNO0X5/view?usp=sharing">
+<img src="https://drive.google.com/file/d/1yTg4GcK8byHMqy0aGkMoXwNzwKCrzFyl/view?usp=sharing">
 
 ## Instructions: 	&#129499; 	&#129499;&#8205;&#9792;
 ### 1. 👇🏻Register yourself for Hacktoberfest 2021
