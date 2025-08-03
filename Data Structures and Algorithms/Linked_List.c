@@ -64,7 +64,7 @@ void beginsert()
 {
     struct node *ptr;
     int item;
-    ptr = (struct node *)malloc(sizeof(struct node *));
+    ptr = (struct node *)malloc(sizeof(struct node));
     if (ptr == NULL)
     {
         printf("\nOVERFLOW");
@@ -210,7 +210,7 @@ void random_delete()
 void search()
 {
     struct node *ptr;
-    int item, i = 0, flag;
+    int item, i = 0, flag = 1;
     ptr = head;
     if (ptr == NULL)
     {
@@ -226,10 +226,7 @@ void search()
             {
                 printf("item found at location %d ", i + 1);
                 flag = 0;
-            }
-            else
-            {
-                flag = 1;
+                break;
             }
             i++;
             ptr = ptr->next;
